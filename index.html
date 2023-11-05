@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Formulário do Candidato</title>
+    <style>
+      body{
+        font-family:'Times New Roman', Times, serif
+      }
+    </style>
+</head>
+<body>
+    <h1 id='logado'> </h1>
+
+
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário do Candidato</b></legend>
+                <br>
+
+                <legend><b>1.0 - Informações de Contato</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                  <input type="text" name="email" id="email" class="inputUser" required>
+                  <label for="nome"class="labelInput">Endereço de E-mail</label>
+              </div>
+              <br><br>
+              <div class="inputBox">
+                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                <label for="nome"class="labelInput">Telefone para Contato</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+              <input type="text" name="nome" id="nome" class="inputUser" required>
+              <label for="nome"class="labelInput">Endereço de Correspondência</label>
+          </div>
+          <br><br>
+            <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+            <input type="date" name="data_nascimento" id="data_nascimento" required>
+            <br><br>
+
+            <legend><b>2.0 - Experiência Profissional</b></legend>
+            <br>
+            <div class="inputBox">
+              <input type="text" name="nome" id="nome" class="inputUser" required>
+              <label for="nome"class="labelInput">Lista de empregos anteriores, começando pela mais recente</label>
+          </div>
+          <br><br>
+          <div class="inputBox">
+            <input type="text" name="nome" id="nome" class="inputUser" required>
+            <label for="nome"class="labelInput">Datas de início e conclusão</label>
+        </div>
+        <br><br>
+          <div class="inputBox">
+            <input type="text" name="nome" id="nome" class="inputUser" required>
+            <label for="nome"class="labelInput">Cargo ocupado</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required>
+          <label for="nome"class="labelInput">Descrição das responsabilidades e realizações</label>
+      </div>
+      <br>
+
+      <legend><b>3.0 - Educação</b></legend>
+      <p>Nível de Escolaridade:</p>
+      <input type="radio" id="ensinofund" name="genero" value="ensinofund" required>
+      <label for="ensinofund">Ensino Fundamental Completo</label>
+      <input type="radio" id="ensinomedio" name="genero" value="ensinomedio" required>
+      <label for="ensinomedio">Ensino Médio Completo</label>
+      <input type="radio" id="ensinosup" name="genero" value="ensinosup" required>
+      <label for="ensinosup">Ensino Superior</label>
+        <br><br>
+          <div class="inputBox">
+            <input type="text" name="nome" id="nome" class="inputUser" required>
+            <label for="nome"class="labelInput">Lista de instituições de ensino frequentadas, começando pela mais recente</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required>
+          <label for="nome"class="labelInput">Nome da instituição</label>
+      </div>
+      <br><br>
+      <div class="inputBox">
+        <input type="text" name="nome" id="nome" class="inputUser" required>
+        <label for="nome"class="labelInput">Datas de início e conclusão</label>
+    </div>
+    <br><br>
+      <div class="inputBox">
+        <input type="text" name="nome" id="nome" class="inputUser" required>
+        <label for="nome"class="labelInput">Certificação(ões)/Formação(ões)</label>
+    </div>
+    <br><br>
+    <br>
+
+      <legend><b>4.0 - Habilidades</b></legend>
+      <br><br>
+      <div class="inputBox">
+        <input type="text" name="nome" id="nome" class="inputUser" required>
+        <label for="nome"class="labelInput">Lista de habilidades relevantes para o trabalho, como competências técnicas, linguagens de programação, software, idiomas, etc.</label>
+    </div>
+    <br><br>
+    <br>
+    <legend><b>5.0 - Objetivos</b></legend>
+    <br><br>
+    <div class="inputBox">
+      <input type="text" name="nome" id="nome" class="inputUser" required>
+      <label for="nome"class="labelInput">Um breve resumo de seus objetivos de carreira e o que você pode oferecer à nossa empresa</label>
+  </div>
+  <br><br>
+  <h1 style="font-size: 15px;">Foto 3x4:</h1>
+
+  <form action="processar_upload.php" method="POST" enctype="multipart/form-data">
+      <label for="imagem">Selecione uma imagem:</label>
+      <input type="file" name="imagem" id="imagem">
+      <br>
+
+      <input type="submit" value="Enviar Imagem">
+  </form>
+  <br>
+  <br>
+  <input type="submit" name="submit" id="submit">
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+    <button onclick='sair()' > Sair </button>
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+</html>
